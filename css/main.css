@@ -308,9 +308,14 @@ button:focus {
   background-color: var(--grayColor);
 }
 
-.matches-content .matches-tabs .tab-content .tab-content-row .match-status .type {
+.matches-content .matches-tabs .tab-content .tab-content-row .match-status .status-name.type {
   background-color: var(--redBack);
   color: var(--redColor);
+}
+
+.matches-content .matches-tabs .tab-content .tab-content-row .match-status .status-name.goals {
+  color: white;
+  background-color: var(--redColor);
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row .team-details {
@@ -332,9 +337,13 @@ button:focus {
   color: var(--blackColor);
 }
 
+.matches-content .matches-tabs .tab-content .tab-content-row .match-result b:first-of-type, .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:last-of-type {
+  padding: 5px 10px;
+}
+
 .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:nth-of-type(2) {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row p:first-of-type {
