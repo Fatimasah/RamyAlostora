@@ -34,13 +34,13 @@ button:focus {
   --blackColor: #031c02; //true
   --blueColor: #00b8a9; //true
   --purpleColor: #557ae0;
-  --purpleBack: #557ae01a;
-  --blueBack: #00b8a91a;
+  --purpleBack: rgba(85, 122, 224, 0.10196078431372549);
+  --blueBack: rgba(85, 122, 224, 0.10196078431372549);
   --whiteColor: #cbd0cb; // true
   --grayborder: #ebeaea; //true
   --grayColor: #a0a3a0; //true
   --redColor: #fe4b4b; //true
-  --redBack: #fe4b4b1a;
+  --redBack: rgba(254, 75, 75, 0.10196078431372549);
   --goldColor: #e0bd55; //true
 
   // --blueGradiant: linear-gradient(to right, #2a354790, #42c3df90);

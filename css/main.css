@@ -46,13 +46,13 @@ button:focus {
   --blackColor: #031c02;
   --blueColor: #00b8a9;
   --purpleColor: #557ae0;
-  --purpleBack: #557ae01a;
-  --blueBack: #00b8a91a;
+  --purpleBack: rgba(85, 122, 224, 0.10196078431372549);
+  --blueBack: rgba(85, 122, 224, 0.10196078431372549);
   --whiteColor: #cbd0cb;
   --grayborder: #ebeaea;
   --grayColor: #a0a3a0;
   --redColor: #fe4b4b;
-  --redBack: #fe4b4b1a;
+  --redBack: rgba(254, 75, 75, 0.10196078431372549);
   --goldColor: #e0bd55;
 }
 
