@@ -210,6 +210,11 @@ button:focus {
 
 // start matches-tabs section
 .matches-content {
+  .container {
+    @media (max-width: 776px) {
+      max-width: 100%;
+    }
+  }
   .matches-tabs {
     border-radius: 7px;
     padding: 30px 15px;
@@ -254,6 +259,7 @@ button:focus {
           align-items: center;
           h5 {
             font: 15px/25px "sansB";
+            color: var(--blackColor);
           }
         }
         .match-result {

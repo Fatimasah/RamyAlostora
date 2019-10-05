@@ -260,6 +260,12 @@ button:focus {
   color: var(--blackColor);
 }
 
+@media (max-width: 776px) {
+  .matches-content .container {
+    max-width: 100%;
+  }
+}
+
 .matches-content .matches-tabs {
   border-radius: 7px;
   padding: 30px 15px;
@@ -318,6 +324,7 @@ button:focus {
 
 .matches-content .matches-tabs .tab-content .tab-content-row .team-details h5 {
   font: 15px/25px "sansB";
+  color: var(--blackColor);
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row .match-result {
