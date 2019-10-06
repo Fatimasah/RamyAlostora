@@ -64,6 +64,7 @@ button:focus {
   border: 1px solid var(--grayborder);
   border-radius: 5px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 // ======================
@@ -229,6 +230,48 @@ button:focus {
       }
     }
     .tab-content {
+      .match-details {
+        @extend %trans;
+        &:hover {
+          .details-hover {
+            opacity: 0.7;
+            @extend %trans;
+          }
+        }
+        .details-hover {
+          position: absolute;
+          background: var(--blackColor);
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          z-index: 1;
+          top: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition-duration: 0.5s;
+          color: white;
+          font-size: 20px;
+          border: none;
+          p {
+            font: 18px/23px "sansB";
+            color: white;
+          }
+          .angel-border {
+            border: 1px solid;
+            border-radius: 50%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            left: 40px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+
       .tab-content-row {
         padding: 25px;
         justify-content: space-between;
@@ -252,7 +295,7 @@ button:focus {
               background-color: var(--redBack);
               color: var(--redColor);
             }
-            &.goals{
+            &.goals {
               color: white;
               background-color: var(--redColor);
             }
@@ -305,7 +348,108 @@ button:focus {
       }
     }
   }
+  .top-soccer {
+    .carousel {
+      .carousel-inner {
+        .carousel-indicators {
+          position: absolute;
+          bottom: unset;
+          left: 0;
+          z-index: 15;
+          display: flex;
+          -ms-flex-pack: center;
+          -webkit-box-pack: center;
+          justify-content: flex-end;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding-left: 0;
+          margin-top: 8%;
+          margin-left: unset;
+          margin-right: unset;
+          list-style: none;
+          padding-left: 30px;
+          li {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--blackColor);
+            // opacity: 0.3;
+          }
+        }
+        .carousel-item {
+          .league-details {
+            border-bottom: 1px solid var(--grayborder);
+            .league-details-inner {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              padding: 20px 30px;
+              @media (max-width: 1199px) {
+                justify-content: center;
+              }
+              img {
+                padding-left: 15px;
+                width: auto;
+              }
+              h3 {
+                font: 14px/23px "sansP";
+                color: var(--blackColor);
+              }
+            }
+          }
+          .item-content {
+            padding: 0px 30px;
+            .player-info {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin-bottom: 18px;
+              position: relative;
+              b {
+                &:first-of-type {
+                  margin-left: 15px;
+                  color: var(--grayColor);
+                  font: 14px/20px "sansB";
+                }
+                &:last-of-type {
+                  width: 35px;
+                  height: 35px;
+                  display: flex;
+                  position: absolute;
+                  font: 14px/20px "sansB";
+                  left: 0;
+                  background: rgba(0, 184, 169, 0.050980392156862744);
+                  border: 1px solid rgba(0, 184, 169, 0.30196078431372547);
+                  color: #00b8a9;
+                  border-radius: 50%;
+                  justify-content: center;
+                  align-items: center;
+                }
+              }
+              img {
+                margin-left: 15px;
+              }
+              .player-name {
+                h5 {
+                  font: 14px/23px "sansB";
+                  color: var(--blackColor);
+                  margin-bottom: 0;
+                }
+                h6 {
+                  font: 11px/23px "sansP";
+                  color: var(--grayColor);
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: var(--goldColor);
