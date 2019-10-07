@@ -66,7 +66,21 @@ button:focus {
   src: url("../fonts/TheSans-Plain.ttf");
 }
 
-.header-section .social-contact ul li a, .header-section .social-contact ul li a svg, .header-section .social-contact ul li a svg:hover, .header-section .social-contact ul li a:hover, .navbar-section .navbar .navbar-nav .nav-item .nav-link, .navbar-section .navbar .navbar-nav .nav-item.active .nav-link, .navbar-section .navbar .navbar-nav .nav-item:hover .nav-link, .matches-content .matches-tabs .nav-pills .nav-item .nav-link, .matches-content .matches-tabs .tab-content .match-details, .matches-content .matches-tabs .tab-content .match-details:hover .details-hover, .nav-pills .nav-link.active,
+.header-section .social-contact ul li a, .header-section .social-contact ul li a svg, .header-section .social-contact ul li a svg:hover, .header-section .social-contact ul li a:hover, .navbar-section .navbar .navbar-nav .nav-item .nav-link, .navbar-section .navbar .navbar-nav .nav-item.active .nav-link, .navbar-section .navbar .navbar-nav .nav-item:hover .nav-link, .matches-content .matches-tabs .nav-pills .nav-item .nav-link, .matches-content .matches-tabs .tab-content .match-details, .matches-content .matches-tabs .tab-content .match-details:hover .details-hover, .matches-content .top-soccer .carousel .carousel-inner .carousel-item,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item,
+.matches-content .top-soccer .carousel .champion-inner .champion-item,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item,
+.matches-content .top-soccer .championships .carousel-inner .champion-item,
+.matches-content .top-soccer .championships .champion-inner .carousel-item,
+.matches-content .top-soccer .championships .champion-inner .champion-item, .matches-content .top-soccer .carousel .carousel-inner .carousel-item:hover .details-hover,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item:hover .details-hover,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item:hover .details-hover,
+.matches-content .top-soccer .carousel .champion-inner .champion-item:hover .details-hover,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item:hover .details-hover,
+.matches-content .top-soccer .championships .carousel-inner .champion-item:hover .details-hover,
+.matches-content .top-soccer .championships .champion-inner .carousel-item:hover .details-hover,
+.matches-content .top-soccer .championships .champion-inner .champion-item:hover .details-hover, .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -77,6 +91,94 @@ button:focus {
   border-radius: 5px;
   margin-bottom: 20px;
   position: relative;
+}
+
+.details-hover {
+  position: absolute;
+  background: var(--blackColor);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+
+.details-hover p {
+  font: 18px/23px "sansB";
+  color: white;
+}
+
+.details-hover .angel-border {
+  border: 1px solid;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 40px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-title img {
+  margin-left: 12px;
+}
+
+.section-title h4 {
+  font: 20px/34px "sansB";
+  color: var(--blackColor);
+  margin-bottom: 0;
+}
+
+.all-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.all-items a {
+  padding: 0 16px 0 0;
+  border-radius: 5px;
+  font: 14px/34px "sansB";
+  color: var(--purpleColor);
+  background-color: var(--purpleBack);
+}
+
+.all-items a img {
+  padding: 13px;
+  margin-right: 16px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--purpleColor);
+  border-radius: 5px;
 }
 
 .header-section {
@@ -269,7 +371,7 @@ button:focus {
 
 .matches-content .matches-tabs {
   border-radius: 7px;
-  padding: 30px 15px;
+  padding: 30px 15px 10px;
 }
 
 .matches-content .matches-tabs .nav-pills {
@@ -283,54 +385,6 @@ button:focus {
 
 .matches-content .matches-tabs .tab-content .match-details:hover .details-hover {
   opacity: 0.7;
-}
-
-.matches-content .matches-tabs .tab-content .match-details .details-hover {
-  position: absolute;
-  background: var(--blackColor);
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
-  top: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  color: white;
-  font-size: 20px;
-  border: none;
-}
-
-.matches-content .matches-tabs .tab-content .match-details .details-hover p {
-  font: 18px/23px "sansB";
-  color: white;
-}
-
-.matches-content .matches-tabs .tab-content .match-details .details-hover .angel-border {
-  border: 1px solid;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  left: 40px;
-  position: absolute;
-  width: 50px;
-  height: 50px;
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row {
@@ -422,7 +476,91 @@ button:focus {
   font: 12px/23px "sansP";
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-indicators {
+.matches-content .top-soccer {
+  padding-right: 30px;
+}
+
+@media (max-width: 992px) {
+  .matches-content .top-soccer {
+    padding: 0;
+  }
+}
+
+.matches-content .top-soccer .site-following {
+  padding: 30px;
+}
+
+.matches-content .top-soccer .site-following .site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.matches-content .top-soccer .site-following .site-info img {
+  margin-left: 15px;
+}
+
+.matches-content .top-soccer .site-following .site-info .site-facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.matches-content .top-soccer .site-following .site-info .site-facebook a {
+  color: var(--purpleColor);
+}
+
+.matches-content .top-soccer .site-following .site-info .site-facebook a:first-child {
+  font: 16px "sansB";
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.matches-content .top-soccer .site-following .site-info .site-facebook a:first-child svg {
+  margin-right: 10px;
+}
+
+.matches-content .top-soccer .site-following .site-info .site-facebook a:last-child {
+  padding: 5px 5px;
+  background: #f7f7f7;
+  border: 1px solid #ebeaea;
+  border-radius: 3px;
+  color: var(--blackColor);
+  font: 12px "sansB";
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.matches-content .top-soccer .site-following .site-info .site-facebook a:last-child svg {
+  color: var(--purpleColor);
+  margin-left: 5px;
+}
+
+.matches-content .top-soccer .site-following .site-info .num-like {
+  font: 9px "sansP";
+  color: var(--grayColor);
+}
+
+.matches-content .top-soccer .carousel .carousel-inner .carousel-indicators,
+.matches-content .top-soccer .carousel .champion-inner .carousel-indicators,
+.matches-content .top-soccer .championships .carousel-inner .carousel-indicators,
+.matches-content .top-soccer .championships .champion-inner .carousel-indicators {
   position: absolute;
   bottom: unset;
   left: 0;
@@ -437,25 +575,82 @@ button:focus {
   -ms-flex-align: center;
   align-items: center;
   padding-left: 0;
-  margin-top: 8%;
+  margin-top: 22px;
   margin-left: unset;
   margin-right: unset;
   list-style: none;
   padding-left: 30px;
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-indicators li {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-indicators li,
+.matches-content .top-soccer .carousel .champion-inner .carousel-indicators li,
+.matches-content .top-soccer .championships .carousel-inner .carousel-indicators li,
+.matches-content .top-soccer .championships .champion-inner .carousel-indicators li {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: var(--blackColor);
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details {
-  border-bottom: 1px solid var(--grayborder);
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .details-hover p,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .details-hover p,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .details-hover p,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .details-hover p,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .details-hover p,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .details-hover p,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .details-hover p,
+.matches-content .top-soccer .championships .champion-inner .champion-item .details-hover p {
+  font-size: 14px;
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details .league-details-inner {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .details-hover .angel-border,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .details-hover .angel-border,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .details-hover .angel-border,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .details-hover .angel-border,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .details-hover .angel-border,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .details-hover .angel-border,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .details-hover .angel-border,
+.matches-content .top-soccer .championships .champion-inner .champion-item .details-hover .angel-border {
+  width: 40px;
+  height: 40px;
+}
+
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item:hover .details-hover,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item:hover .details-hover,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item:hover .details-hover,
+.matches-content .top-soccer .carousel .champion-inner .champion-item:hover .details-hover,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item:hover .details-hover,
+.matches-content .top-soccer .championships .carousel-inner .champion-item:hover .details-hover,
+.matches-content .top-soccer .championships .champion-inner .carousel-item:hover .details-hover,
+.matches-content .top-soccer .championships .champion-inner .champion-item:hover .details-hover {
+  opacity: 0.7;
+}
+
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .league-details,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .league-details,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .league-details,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .league-details,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .league-details,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .league-details,
+.matches-content .top-soccer .championships .champion-inner .champion-item .league-details {
+  border-bottom: 1px solid var(--grayborder);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details .league-details-inner,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .league-details .league-details-inner,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .league-details .league-details-inner,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .league-details .league-details-inner,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .league-details .league-details-inner,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .league-details .league-details-inner,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .league-details .league-details-inner,
+.matches-content .top-soccer .championships .champion-inner .champion-item .league-details .league-details-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,28 +665,102 @@ button:focus {
 }
 
 @media (max-width: 1199px) {
-  .matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details .league-details-inner {
+  .matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details .league-details-inner,
+  .matches-content .top-soccer .carousel .carousel-inner .champion-item .league-details .league-details-inner,
+  .matches-content .top-soccer .carousel .champion-inner .carousel-item .league-details .league-details-inner,
+  .matches-content .top-soccer .carousel .champion-inner .champion-item .league-details .league-details-inner,
+  .matches-content .top-soccer .championships .carousel-inner .carousel-item .league-details .league-details-inner,
+  .matches-content .top-soccer .championships .carousel-inner .champion-item .league-details .league-details-inner,
+  .matches-content .top-soccer .championships .champion-inner .carousel-item .league-details .league-details-inner,
+  .matches-content .top-soccer .championships .champion-inner .champion-item .league-details .league-details-inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details .league-details-inner img {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details .league-details-inner img,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .league-details .league-details-inner img,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .league-details .league-details-inner img,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .league-details .league-details-inner img,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .league-details .league-details-inner img,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .league-details .league-details-inner img,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .league-details .league-details-inner img,
+.matches-content .top-soccer .championships .champion-inner .champion-item .league-details .league-details-inner img {
   padding-left: 15px;
   width: auto;
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details .league-details-inner h3 {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details .league-details-inner h3,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .league-details .league-details-inner h3,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .league-details .league-details-inner h3,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .league-details .league-details-inner h3,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .league-details .league-details-inner h3,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .league-details .league-details-inner h3,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .league-details .league-details-inner h3,
+.matches-content .top-soccer .championships .champion-inner .champion-item .league-details .league-details-inner h3 {
   font: 14px/23px "sansP";
   color: var(--blackColor);
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details b,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .league-details b,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .league-details b,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .league-details b,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .league-details b,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .league-details b,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .league-details b,
+.matches-content .top-soccer .championships .champion-inner .champion-item .league-details b {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  font: 14px/20px "sansB";
+  left: 30px;
+  background-color: rgba(224, 189, 85, 0.0509804);
+  border: 1px solid rgba(224, 189, 85, 0.301961);
+  color: var(--blackColor);
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .league-details.border-none,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .league-details.border-none,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .league-details.border-none,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .league-details.border-none,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .league-details.border-none,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .league-details.border-none,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .league-details.border-none,
+.matches-content .top-soccer .championships .champion-inner .champion-item .league-details.border-none {
+  border: none;
+}
+
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .item-content,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .item-content,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .item-content,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .item-content,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .item-content,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .item-content,
+.matches-content .top-soccer .championships .champion-inner .champion-item .item-content {
   padding: 0px 30px;
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .item-content .player-info,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .item-content .player-info,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .item-content .player-info,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .item-content .player-info,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .item-content .player-info,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .item-content .player-info,
+.matches-content .top-soccer .championships .champion-inner .champion-item .item-content .player-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,13 +775,27 @@ button:focus {
   position: relative;
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info b:first-of-type {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info b:first-of-type,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .item-content .player-info b:first-of-type,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .item-content .player-info b:first-of-type,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .item-content .player-info b:first-of-type,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .item-content .player-info b:first-of-type,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .item-content .player-info b:first-of-type,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .item-content .player-info b:first-of-type,
+.matches-content .top-soccer .championships .champion-inner .champion-item .item-content .player-info b:first-of-type {
   margin-left: 15px;
   color: var(--grayColor);
   font: 14px/20px "sansB";
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info b:last-of-type {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info b:last-of-type,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .item-content .player-info b:last-of-type,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .item-content .player-info b:last-of-type,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .item-content .player-info b:last-of-type,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .item-content .player-info b:last-of-type,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .item-content .player-info b:last-of-type,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .item-content .player-info b:last-of-type,
+.matches-content .top-soccer .championships .champion-inner .champion-item .item-content .player-info b:last-of-type {
   width: 35px;
   height: 35px;
   display: -webkit-box;
@@ -533,17 +816,38 @@ button:focus {
           align-items: center;
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info img {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info img,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .item-content .player-info img,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .item-content .player-info img,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .item-content .player-info img,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .item-content .player-info img,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .item-content .player-info img,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .item-content .player-info img,
+.matches-content .top-soccer .championships .champion-inner .champion-item .item-content .player-info img {
   margin-left: 15px;
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info .player-name h5 {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info .player-name h5,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .item-content .player-info .player-name h5,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .item-content .player-info .player-name h5,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .item-content .player-info .player-name h5,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .item-content .player-info .player-name h5,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .item-content .player-info .player-name h5,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .item-content .player-info .player-name h5,
+.matches-content .top-soccer .championships .champion-inner .champion-item .item-content .player-info .player-name h5 {
   font: 14px/23px "sansB";
   color: var(--blackColor);
   margin-bottom: 0;
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info .player-name h6 {
+.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info .player-name h6,
+.matches-content .top-soccer .carousel .carousel-inner .champion-item .item-content .player-info .player-name h6,
+.matches-content .top-soccer .carousel .champion-inner .carousel-item .item-content .player-info .player-name h6,
+.matches-content .top-soccer .carousel .champion-inner .champion-item .item-content .player-info .player-name h6,
+.matches-content .top-soccer .championships .carousel-inner .carousel-item .item-content .player-info .player-name h6,
+.matches-content .top-soccer .championships .carousel-inner .champion-item .item-content .player-info .player-name h6,
+.matches-content .top-soccer .championships .champion-inner .carousel-item .item-content .player-info .player-name h6,
+.matches-content .top-soccer .championships .champion-inner .champion-item .item-content .player-info .player-name h6 {
   font: 11px/23px "sansP";
   color: var(--grayColor);
   margin-bottom: 0;
@@ -553,5 +857,140 @@ button:focus {
 .nav-pills .show > .nav-link {
   background-color: var(--goldColor);
   color: white !important;
+}
+
+.latest-news-section {
+  margin-top: 60px;
+}
+
+@media (max-width: 776px) {
+  .latest-news-section .container {
+    max-width: 100%;
+  }
+}
+
+.latest-news-section .news .news-item {
+  position: relative;
+  border-radius: 7px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .latest-news-section .news .news-item {
+    text-align: center;
+  }
+}
+
+.latest-news-section .news .news-item img {
+  max-width: 100%;
+}
+
+.latest-news-section .news .news-item .news-title {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  left: 30px;
+}
+
+.latest-news-section .news .news-item .news-title b {
+  font: 18px/34px "sansB";
+  color: white;
+}
+
+.latest-news-section .news .news-item .news-title p {
+  font: 12px/34px "sansP";
+  color: var(--grayColor);
+  margin-bottom: 0;
+}
+
+.latest-news-section .news .row-news2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.latest-news-section .news .row-news2 .col-news .news-item .news-title {
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+}
+
+@media (max-width: 992px) {
+  .latest-news-section .news .row-news2 .col-news .news-item .news-title {
+    right: 35px;
+    left: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .latest-news-section .news .row-news2 .col-news .news-item .news-title {
+    right: 50px;
+    left: 50px;
+  }
+}
+
+.latest-news-section .news .row-news2 .col-news .news-item .news-title b {
+  font: 14px/23px "sansB";
+  color: white;
+}
+
+.latest-news-section .news .row-news2 .col-news .news-item .news-title p {
+  font: 12px/34px "sansP";
+  color: var(--grayColor);
+  margin-bottom: 0;
+}
+
+.latest-news-section .left-news .news-item .news-title b {
+  font: 15px/23px "sansB";
+}
+
+.latest-news-section .left-news .news-item .news-title p {
+  font: 12px/34px "sansP";
+}
+
+.latest-news-section .left-news .all-items {
+  margin-top: 100px;
+}
+
+.site-app {
+  padding-top: 150px;
+}
+
+.site-app .app-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.site-app .app-info p:first-of-type {
+  font: 13px "sansB";
+  color: var(--grayColor);
+}
+
+.site-app .app-info p:nth-of-type(2) {
+  font: 16px "sansB";
+  color: var(--blackColor);
+}
+
+.site-app .app-info a {
+  font: 12px "sansB";
+  color: white;
+  background-color: var(--goldColor);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.site-app img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
