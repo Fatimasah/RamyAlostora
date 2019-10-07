@@ -388,7 +388,7 @@ button:focus {
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row {
-  padding: 25px;
+  padding: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
