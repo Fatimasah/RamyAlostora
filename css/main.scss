@@ -162,28 +162,31 @@ button:focus {
         &:nth-of-type(3),
         &:nth-of-type(4),
         &:nth-of-type(5) {
-          width: 50px;
-          height: 50px;
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
-          background: rgba(255, 255, 255, 0.06274509803921569);
-          border-radius: 5px;
+          a {
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.06274509803921569);
+            border-radius: 5px;
+          }
         }
         a {
           color: var(--grayColor);
           @extend %trans;
           svg {
             color: white;
+            font-size: 20px;
             @extend %trans;
-            &:hover {
-              color: var(--goldColor);
-              @extend %trans;
-            }
           }
           &:hover {
             color: white;
             @extend %trans;
+            svg {
+              color: var(--goldColor);
+              @extend %trans;
+            }
           }
         }
         &:last-of-type {
@@ -764,5 +767,47 @@ button:focus {
     max-width: 100%;
   }
 }
-
 // end site app section
+
+// start footer section
+.footer-section {
+  footer {
+    .row {
+      justify-content: space-evenly;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      @media (max-width: 786px) {
+        text-align: center;
+      }
+      &:first-of-type,
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        @media (max-width: 786px) {
+          flex-basis: 33.333%;
+        }
+        @media (max-width: 300px) {
+          flex-basis: 50%;
+        }
+      }
+      &:nth-of-type(4),
+      &:last-of-type {
+        @media (max-width: 786px) {
+          flex-basis: 50%;
+        }
+      }
+    }
+    // ul {
+    // margin-left: 100px !important;
+    // li {
+    a {
+      font: 14px/25px "sansB";
+      color: #415340;
+    }
+    // }
+    // }
+  }
+}
+// end footer section
