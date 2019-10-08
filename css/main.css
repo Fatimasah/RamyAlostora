@@ -187,6 +187,20 @@ button:focus {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 767px) {
+  .header-section .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-section .logo img {
+    width: 60px;
+  }
+}
+
 .header-section .site-name {
   color: #ffffff;
   font-family: "sansB";
@@ -203,6 +217,12 @@ button:focus {
           justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .header-section .site-name {
+    font-size: 14px;
+  }
+}
+
 .header-section .social-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,6 +236,27 @@ button:focus {
           justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .header-section .social-contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-section .social-contact {
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+}
+
 .header-section .social-contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,8 +266,20 @@ button:focus {
           align-items: center;
 }
 
+@media (max-width: 356px) {
+  .header-section .social-contact ul {
+    padding-top: 20px;
+  }
+}
+
 .header-section .social-contact ul li {
   display: inline-block;
+}
+
+@media (max-width: 576px) {
+  .header-section .social-contact ul li:first-of-type, .header-section .social-contact ul li:nth-of-type(2), .header-section .social-contact ul li:last-of-type {
+    display: none;
+  }
 }
 
 .header-section .social-contact ul li:nth-of-type(3) a, .header-section .social-contact ul li:nth-of-type(4) a, .header-section .social-contact ul li:nth-of-type(5) a {
@@ -245,13 +298,27 @@ button:focus {
   border-radius: 5px;
 }
 
+@media (max-width: 576px) {
+  .header-section .social-contact ul li:nth-of-type(3) a, .header-section .social-contact ul li:nth-of-type(4) a, .header-section .social-contact ul li:nth-of-type(5) a {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .header-section .social-contact ul li a {
   color: var(--grayColor);
+  font-size: 12px;
 }
 
 .header-section .social-contact ul li a svg {
   color: white;
   font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .header-section .social-contact ul li a svg {
+    font-size: 14px;
+  }
 }
 
 .header-section .social-contact ul li a:hover {
@@ -364,7 +431,13 @@ button:focus {
   color: var(--blackColor);
 }
 
-@media (max-width: 776px) {
+@media (max-width: 400px) {
+  .league-section .league-content .owl-carousel .item .league-details a h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
   .matches-content .container {
     max-width: 100%;
   }
@@ -381,7 +454,13 @@ button:focus {
 
 .matches-content .matches-tabs .nav-pills .nav-item .nav-link {
   color: var(--blackColor);
-  font: Bold 18px/31px "sansB";
+  font: 18px/31px "sansB";
+}
+
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .nav-pills .nav-item .nav-link {
+    font: 12px/22px "sansB";
+  }
 }
 
 .matches-content .matches-tabs .tab-content .match-details:hover .details-hover {
@@ -396,6 +475,12 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .tab-content .tab-content-row {
+    padding: 10px;
+  }
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row .match-status .status-name {
@@ -440,18 +525,43 @@ button:focus {
   color: var(--blackColor);
 }
 
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .tab-content .tab-content-row .team-details h5 {
+    font-size: 12px;
+  }
+}
+
 .matches-content .matches-tabs .tab-content .tab-content-row .match-result {
   font: 15px/23px "sansB";
   color: var(--blackColor);
+}
+
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .tab-content .tab-content-row .match-result {
+    font-size: 12px;
+  }
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:first-of-type, .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:last-of-type {
   padding: 5px 10px;
 }
 
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:first-of-type, .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:last-of-type {
+    padding: 5px 5px;
+  }
+}
+
 .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:nth-of-type(2) {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:nth-of-type(2) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row p:first-of-type {
@@ -864,7 +974,7 @@ button:focus {
   margin-top: 60px;
 }
 
-@media (max-width: 776px) {
+@media (max-width: 768px) {
   .latest-news-section .container {
     max-width: 100%;
   }

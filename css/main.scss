@@ -142,6 +142,18 @@ button:focus {
   background-image: url("../imgs/header-back.png");
   background-size: cover;
   background-repeat: no-repeat;
+  .row {
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+  .logo {
+    img {
+      @media (max-width: 767px) {
+        width: 60px;
+      }
+    }
+  }
   .site-name {
     color: #ffffff;
     font-family: "sansB";
@@ -149,16 +161,40 @@ button:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
   }
   .social-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: 767px) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+      margin-top: 30px;
+    }
+    @media (max-width: 576px) {
+      margin-top: 0px;
+      margin-bottom: 0;
+    }
     ul {
       display: flex;
       align-items: center;
+      @media (max-width: 356px) {
+        padding-top: 20px;
+      }
       li {
         display: inline-block;
+        &:first-of-type,
+        &:nth-of-type(2),
+        &:last-of-type {
+          @media (max-width: 576px) {
+            display: none;
+          }
+        }
         &:nth-of-type(3),
         &:nth-of-type(4),
         &:nth-of-type(5) {
@@ -170,15 +206,23 @@ button:focus {
             align-items: center;
             background: rgba(255, 255, 255, 0.06274509803921569);
             border-radius: 5px;
+            @media (max-width: 576px) {
+              width: 30px;
+              height: 30px;
+            }
           }
         }
         a {
           color: var(--grayColor);
+          font-size: 12px;
           @extend %trans;
           svg {
             color: white;
             font-size: 20px;
             @extend %trans;
+            @media (max-width: 576px) {
+              font-size: 14px;
+            }
           }
           &:hover {
             color: white;
@@ -272,6 +316,9 @@ button:focus {
             h3 {
               font: 14px/23px "sansP";
               color: var(--blackColor);
+              @media (max-width: 400px) {
+                font-size: 12px;
+              }
             }
           }
         }
@@ -284,7 +331,7 @@ button:focus {
 // start matches-tabs section
 .matches-content {
   .container {
-    @media (max-width: 776px) {
+    @media (max-width: 768px) {
       max-width: 100%;
     }
   }
@@ -296,8 +343,11 @@ button:focus {
       .nav-item {
         .nav-link {
           color: var(--blackColor);
-          font: Bold 18px/31px "sansB";
+          font: 18px/31px "sansB";
           @extend %trans;
+          @media (max-width: 576px) {
+            font: 12px/22px "sansB";
+          }
         }
       }
     }
@@ -348,6 +398,9 @@ button:focus {
         padding: 25px;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 576px) {
+          padding: 10px;
+        }
         .match-status {
           .status-name {
             font: 12px/23px "sansP";
@@ -379,19 +432,32 @@ button:focus {
           h5 {
             font: 15px/25px "sansB";
             color: var(--blackColor);
+            @media (max-width: 576px) {
+              font-size: 12px;
+            }
           }
         }
         .match-result {
           font: 15px/23px "sansB";
           color: var(--blackColor);
+          @media (max-width: 576px) {
+            font-size: 12px;
+          }
           b {
             &:first-of-type,
             &:last-of-type {
               padding: 5px 10px;
+              @media (max-width: 576px) {
+                padding: 5px 5px;
+              }
             }
             &:nth-of-type(2) {
               padding-left: 10px;
               padding-right: 10px;
+              @media (max-width: 576px) {
+                padding-left: 0px;
+                padding-right: 0px;
+              }
             }
           }
         }
@@ -655,7 +721,7 @@ button:focus {
 .latest-news-section {
   margin-top: 60px;
   .container {
-    @media (max-width: 776px) {
+    @media (max-width: 768px) {
       max-width: 100%;
     }
   }
