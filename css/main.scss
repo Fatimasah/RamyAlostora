@@ -17,9 +17,9 @@ html {
   @media (min-width: 1199px) {
     font: 16px/26px "sansP";
   }
-  @media (min-width: 992px) {
-    height: 100%;
-  }
+  // @media (min-width: 992px) {
+  //   height: 100%;
+  // }
 }
 a,
 a:hover {
@@ -136,6 +136,18 @@ button:focus {
   }
 }
 // end for more items
+
+// adds item start
+.adds {
+  height: 90px;
+  background-color: #ececeb;
+  margin-bottom: 20px;
+
+  text-align: center;
+  color: black;
+  line-height: 7;
+}
+// adds item end
 // ======================
 // start header section
 .header-section {
@@ -214,7 +226,6 @@ button:focus {
         }
         a {
           color: var(--grayColor);
-          font-size: 12px;
           @extend %trans;
           svg {
             color: white;
@@ -393,14 +404,10 @@ button:focus {
         //   }
         // }
       }
-
       .tab-content-row {
         padding: 25px;
         justify-content: space-between;
         align-items: center;
-        @media (max-width: 576px) {
-          padding: 10px;
-        }
         .match-status {
           .status-name {
             font: 12px/23px "sansP";
@@ -426,14 +433,20 @@ button:focus {
             }
           }
         }
+        .status-live {
+          animation: opacity-animation 1s infinite;
+        }
         .team-details {
           display: flex;
           align-items: center;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
           h5 {
             font: 15px/25px "sansB";
             color: var(--blackColor);
-            @media (max-width: 576px) {
-              font-size: 12px;
+            @media (max-width: 767px) {
+              font: 12px/20px "sansB";
             }
           }
         }
@@ -460,32 +473,64 @@ button:focus {
               }
             }
           }
+          @media (max-width: 767px) {
+            margin-bottom: -15%;
+          }
+        }
+        .finished-result {
+          .winner {
+            background: rgba(0, 184, 169, 0.050980392156862744) 0% 0% no-repeat padding-box;
+            border: 1px solid rgba(0, 184, 169, 0.30196078431372547);
+            border-radius: 4px;
+            color: var(--blueColor);
+          }
+          .loser {
+            background: rgba(254, 75, 75, 0.050980392156862744) 0% 0% no-repeat padding-box;
+            border: 1px solid rgba(254, 75, 75, 0.30196078431372547);
+            border-radius: 4px;
+            color: var(--redColor);
+          }
         }
         p {
           &:first-of-type {
             font: 13px/23px "sansP";
             color: var(--grayColor);
+            @media (max-width: 767px) {
+              font: 12px/23px "sansP";
+            }
           }
           &:last-of-type {
             font: 14px/23px "sansB";
             color: var(--blackColor);
-          }
-        }
-        .timing {
-          p {
-            margin-bottom: 0;
-            &:first-of-type {
-              font: 15px/23px "sansB";
-              color: var(--goldColor);
-            }
-            &:last-of-type {
-              font: 12px/23px "sansP";
+            @media (max-width: 767px) {
+              font: 13px/23px "sansP";
             }
           }
         }
       }
+      .timing {
+        p {
+          margin-bottom: 0;
+          &:first-of-type {
+            font: 15px/23px "sansB";
+            color: var(--goldColor);
+          }
+          &:last-of-type {
+            font: 12px/23px "sansP";
+          }
+        }
+        @media (max-width: 767px) {
+          margin-bottom: -15%;
+        }
+      }
+      .first-row {
+        @media (max-width: 767px) {
+          padding-bottom: 0px;
+        }
+      }
     }
   }
+
   .top-soccer {
     padding-right: 30px;
     @media (max-width: 992px) {
@@ -536,17 +581,6 @@ button:focus {
     }
     .carousel,
     .championships {
-      // .championships-title {
-      //   margin-bottom: 20px;
-      //   img {
-      //     margin-left: 12px;
-      //   }
-      //   h4 {
-      //     font: 20px/34px "sansB";
-      //     color: var(--blackColor);
-      //     margin-bottom: 0;
-      //   }
-      // }
       .carousel-inner,
       .champion-inner {
         .carousel-indicators {
@@ -687,25 +721,6 @@ button:focus {
           }
         }
       }
-      // .all-championships {
-      //   display: flex;
-      //   justify-content: flex-end;
-      //   a {
-      //     padding: 0 16px 0 0;
-      //     border-radius: 5px;
-      //     font: 14px/34px "sansB";
-      //     color: var(--purpleColor);
-      //     background-color: var(--purpleBack);
-      //     img {
-      //       padding: 13px;
-      //       margin-right: 16px;
-      //       width: 50px;
-      //       height: 50px;
-      //       background-color: var(--purpleColor);
-      //       border-radius: 5px;
-      //     }
-      //   }
-      // }
     }
   }
 }
@@ -837,6 +852,7 @@ button:focus {
 
 // start footer section
 .footer-section {
+  margin-bottom: 50px;
   footer {
     .row {
       justify-content: space-evenly;
@@ -871,9 +887,29 @@ button:focus {
     a {
       font: 14px/25px "sansB";
       color: #415340;
+      margin-bottom: 10px;
+      @extend %trans;
+      &:hover {
+        color: var(--goldColor);
+        @extend %trans;
+      }
     }
     // }
     // }
   }
 }
 // end footer section
+
+// start animation
+@keyframes opacity-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+// end animation
