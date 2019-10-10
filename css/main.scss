@@ -1,35 +1,4 @@
 /* start general style */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-  direction: rtl;
-}
-body,
-html {
-  text-align: right;
-  font: 12px/22px "sansP";
-  @media (min-width: 1199px) {
-    font: 16px/26px "sansP";
-  }
-  // @media (min-width: 992px) {
-  //   height: 100%;
-  // }
-}
-a,
-a:hover {
-  text-decoration: none;
-  outline: none;
-  color: #ffffff;
-}
-button:focus {
-  outline: none;
-}
 :root {
   --blackColor: #031c02; //true
   --blueColor: #00b8a9; //true
@@ -60,6 +29,39 @@ button:focus {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+body,
+html {
+  text-align: right;
+  font: 12px/22px "sansP";
+  color: var(--blackColor);
+  @media (min-width: 1199px) {
+    font: 16px/26px "sansP";
+  }
+  // @media (min-width: 992px) {
+  //   height: 100%;
+  // }
+}
+a,
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+}
+button:focus {
+  outline: none;
+}
+
 .border-gray {
   border: 1px solid var(--grayborder);
   border-radius: 5px;

@@ -1,40 +1,4 @@
 /* start general style */
-* {
-  -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  direction: rtl;
-}
-
-body,
-html {
-  text-align: right;
-  font: 12px/22px "sansP";
-}
-
-@media (min-width: 1199px) {
-  body,
-  html {
-    font: 16px/26px "sansP";
-  }
-}
-
-a,
-a:hover {
-  text-decoration: none;
-  outline: none;
-  color: #ffffff;
-}
-
-button:focus {
-  outline: none;
-}
-
 :root {
   --blackColor: #031c02;
   --blueColor: #00b8a9;
@@ -77,6 +41,43 @@ button:focus {
 .nav-pills .show > .nav-link, .footer-section footer a, .footer-section footer a:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+body,
+html {
+  text-align: right;
+  font: 12px/22px "sansP";
+  color: var(--blackColor);
+}
+
+@media (min-width: 1199px) {
+  body,
+  html {
+    font: 16px/26px "sansP";
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+}
+
+button:focus {
+  outline: none;
 }
 
 .border-gray {

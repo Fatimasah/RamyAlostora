@@ -1,0 +1,148 @@
+// matches style start
+// sequence
+body {
+  background-color: #f7f7f7;
+}
+.navbar-section {
+  background-color: white;
+}
+// pages sequence start
+.pages-sequence {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  a {
+    &:first-of-type {
+      font: 13px/20px "sansB";
+      color: var(--goldColor);
+    }
+    &:nth-of-type(2) {
+      font: 13px/20px "sansB";
+      color: var(--blackColor);
+    }
+    &:last-of-type {
+      font: 13px/20px "sansP";
+      color: var(--grayColor);
+    }
+  }
+}
+// pages sequence end
+
+// soon alert start
+.soon-alert {
+  margin-bottom: 30px;
+  .soon-block {
+    background-color: rgba(245, 181, 83, 0.10196078431372549);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    border-radius: 7px;
+    img {
+      margin-left: 10px;
+    }
+    b {
+      font: 18px/23px "sansB";
+      @media (max-width: 567px) {
+        font-size: 14px;
+      }
+      &:last-of-type {
+        color: #f5b553;
+      }
+    }
+  }
+}
+//  soon alert end
+
+// match details start
+.details-section {
+  margin-bottom: 30px;
+  .details-block {
+    padding: 40px;
+    background: white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .match-info {
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+      h3 {
+        font: 20px/23px "sansB";
+        color: var(--goldColor);
+        @media (max-width: 767px) {
+          margin-bottom: 30px;
+          font-size: 16px;
+        }
+      }
+      p {
+        font: 16px/23px "sansB";
+        margin-bottom: 0;
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+        b {
+          color: var(--purpleColor);
+        }
+      }
+    }
+    .joining-teams {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      b {
+        margin-left: 35px;
+        margin-right: 35px;
+        font: 20px/23px "sansB";
+      }
+    }
+  }
+}
+// match details end
+
+// meeting info section start
+.meeting-section {
+  .meeting-info {
+    padding: 40px;
+    background: white;
+    .info-blocks {
+      display: flex;
+      .info-block {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        .info-img {
+          width: 40px;
+          height: 55px;
+          background-color: #ffffff;
+          border: 1px solid #ebeaea;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 12px;
+        }
+        .info-text {
+          p {
+            margin-bottom: 0;
+            font: 13px/23px "sansP";
+            color: var(--grayColor);
+          }
+          b {
+            font: 15px/23px "sansB";
+            color: var(--blackColor);
+          }
+        }
+      }
+    }
+    h3 {
+      font: 20px/23px "sansB";
+      margin-bottom: 35px;
+    }
+  }
+}
+// meeting info section end
